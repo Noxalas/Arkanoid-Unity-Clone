@@ -39,6 +39,8 @@ public class Powerup : MonoBehaviour
 
         powerUpState = state.Collected;
 
+        GameManager.UpdateScore(500);
+
         player = collector.GetComponent<Vaus>();
 
         PlaySound();
